@@ -4,9 +4,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- importo google font (prima dei miei stili) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+  <!-- carico il file css separato -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- esempio di stile nella head della pagina -->
+  <style type="text/css">
+    /*#titolo-principale{
+      color: yellow;
+    }*/
+  </style>
+  
+
   <title>Primo css</title>
 </head>
 <body>
+
+  <!-- di ID ne può essere presente solo uno per pagina con quel nome -->
+  <h1 id="titolo-principale" >Primo css</h1>
+
+  <!-- la stessa classe può essere utili<zata n volte per pagina -->
+  <p class="testo-pricipale">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laboriosam odio ad? <span>Sequi consequatur</span> eum soluta ab quia aut tempore exercitationem dignissimos repellat quasi aliquid, asperiores commodi. Tempore, dolores repudiandae.
+  </p>
+  <p >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laboriosam odio ad? <span class="testo-secondario">Sequi consequatur</span> eum soluta ab quia aut tempore exercitationem dignissimos repellat quasi aliquid, asperiores commodi. Tempore, dolores repudiandae.
+  </p>
+  <p class="testo-pricipale">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laboriosam odio ad? <span>Sequi consequatur</span> eum soluta ab quia aut tempore exercitationem dignissimos repellat quasi aliquid, asperiores commodi. Tempore, dolores repudiandae.
+  </p>
+
+  <div class="box">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde incidunt voluptatibus alias quibusdam. Libero illo similique laboriosam, incidunt culpa obcaecati ipsum! Exercitationem, dolorum accusantium. Dignissimos aliquid consequuntur quidem rerum.
+    </p>
+  </div>
+
+  <div class="box testo-destra">
+    <h3>text-align: right;</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde incidunt voluptatibus alias quibusdam. Libero illo similique laboriosam, incidunt culpa obcaecati ipsum! Exercitationem, dolorum accusantium. Dignissimos aliquid consequuntur quidem rerum.
+    </p>
+  </div>
+
+  <div class="box testo-centrato">
+    <h3>text-align: center</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde incidunt voluptatibus alias quibusdam. Libero illo similique laboriosam, incidunt culpa obcaecati ipsum! Exercitationem, dolorum accusantium. Dignissimos aliquid consequuntur quidem rerum.
+    </p>
+  </div>
+
+  <div class="box testo-giustificato">
+    <h3>text-align: justify;</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde incidunt voluptatibus alias quibusdam. Libero illo similique laboriosam, incidunt culpa obcaecati ipsum! Exercitationem, dolorum accusantium. Dignissimos aliquid consequuntur quidem rerum.</p>
+  </div>
+
+  <div class="box box-secondary">
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde incidunt voluptatibus alias quibusdam. Libero illo similique laboriosam, incidunt culpa obcaecati ipsum! Exercitationem, dolorum accusantium. Dignissimos aliquid consequuntur quidem rerum.</p>
+  </div>
+
+  <div class="box box-con-img">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde incidunt voluptatibus alias quibusdam. Libero illo similique laboriosam, incidunt culpa obcaecati ipsum! Exercitationem, dolorum accusantium. Dignissimos aliquid consequuntur quidem rerum.</p>
+  </div>
   
 </body>
 </html>
