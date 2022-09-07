@@ -1,7 +1,53 @@
+/* reset definitivo */
+*{
+  margin: 0;
+  padding: 0;
+  /* impedisce ai border e padding di sommarsi a width e height */
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   /* di default il font è 16px */
   font-size: 16px;
+}
+
+header{
+  height: 100px;
+  padding: 10px 40px;
+}
+
+.menu ul{
+  list-style: none;
+}
+.menu ul li{
+  display: inline-block;
+  margin: 20px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul li a:hover{
+  text-decoration: underline;
+  color: red;
+}
+.menu ul li a:active{
+  text-decoration: underline;
+  color: yellow;
+}
+
+#testo-bis{
+  color:cadetblue;
+}
+
+h2.testo-secondario{
+  color: blueviolet;
+}
+
+h2{
+  color: brown;
 }
 
 
@@ -57,5 +103,86 @@ span{
   background-repeat: no-repeat;
 }
 
+.box-2{
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  background-color: brown;
+  margin: 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
 
+/* trasformando un elemento inline in inline-block posso gestirne le dimensioni senza interrompre il flusso della riga */
+.box-2 a{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  background-color: yellow;
+}
+.box-3{
+  display: none;
+  width: 500px;
+  height: 500px;
+  background-color: brown;
+  margin: 20px;
+  border-top: 10px solid red;
+  border-right: 5px solid rgb(1, 66, 244);
+  /* la percentuale del padding è sempre in relazione alla larghezza del contenitore */
+  padding-top: 2%;
+}
 
+/* trasformando i div in inline-block si affiancano come le immagini */
+.box-inline-block{
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color:darkgreen;
+  margin: 20px;
+}
+
+.box-con-margin-1, .box-con-margin-2{
+  width: 500px;
+  height: 300px;
+  background-color: cadetblue;
+  border: 1px solid black;
+  margin: 40px;
+}
+
+.box-con-margin-1{
+  margin-bottom: 60px;
+}
+
+.box-con-margin-2{
+  margin-top: -30px;
+}
+
+ul[class*='lista-']{
+  margin: 10px 50px;
+}
+
+.lista-1 li:first-child{
+  color: red;
+}
+.lista-1 li:last-child{
+  color: green;
+}
+
+/* il quarto elemento deve essere verde */
+.lista-2 li:nth-child(4){
+  color: green;
+}
+
+/* tutti i multipli di 3, a partire dal quinto elemento siano rossi */
+.lista-3 li:nth-child(3n + 5) {
+  color:red;
+}
+
+/* tuggli gli elementi dispari siano rossi */
+.lista-4 li:nth-child(odd) {
+  color:red;
+}
+/* tuggli gli elementi pari siano rossi */
+.lista-5 li:nth-child(even) {
+  color:red;
+}
